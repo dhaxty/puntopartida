@@ -3,12 +3,17 @@
 /* ========================= */
 :root {
     /* Paleta de colores */
-    --azul-skylux: #0a1628;    /* Navy oscuro — fondo principal */
-    --celeste: #1e90ff;        /* Azul brillante */
-    --gris-fondo: #f4f6f9;    /* Fondo suave azulado */
-    --texto-oscuro: #0a1628;  /* Navy para textos */
+    --azul-skylux: #0a1628;
+    /* Navy oscuro — fondo principal */
+    --celeste: #1e90ff;
+    /* Azul brillante */
+    --gris-fondo: #f4f6f9;
+    /* Fondo suave azulado */
+    --texto-oscuro: #0a1628;
+    /* Navy para textos */
     --texto-suave: #666666;
-    --blanco: #ffffff;         /* Blanco */
+    --blanco: #ffffff;
+    /* Blanco */
 
     /* Tipografías */
     --fuente-primaria: "Poppins", sans-serif;
@@ -31,7 +36,8 @@
 /* Selector de tipo etiqueta */
 /* ------------------------- */
 html {
-    scroll-behavior: smooth; /* Suaviza el salto del scroll vertical */
+    scroll-behavior: smooth;
+    /* Suaviza el salto del scroll vertical */
 }
 
 body {
@@ -42,7 +48,9 @@ body {
 }
 
 /* Aplica la fuente primaria a los títulos */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--fuente-primaria);
 }
 
@@ -54,12 +62,17 @@ p {
 
 /* Elimina el margen inferior que aparece
    automáticamente debajo del objeto */
-img, video {
+img,
+video {
     display: block;
 }
 
 /* Hereda la fuente del body en los controles de formulario */
-button, input, select, textarea, label {
+button,
+input,
+select,
+textarea,
+label {
     font-family: inherit;
 }
 
@@ -124,10 +137,8 @@ button, input, select, textarea, label {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.60),
-        rgba(0, 0, 0, 0.15)
-    );
+    background: linear-gradient(rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.15));
 }
 
 /* Contenedor del texto — encima del degradado */
@@ -148,11 +159,25 @@ button, input, select, textarea, label {
 }
 
 /* Imagen específica por página */
-#banner-contacto   { background-image: url("../imag/bannersecundario.jpg"); }
-#banner-modelos  { background-image: url("../imag/bannersecundario.jpg"); }
-#banner-nosotros   { background-image: url("../imag/bannersecundario.jpg"); }
-#banner-reservas   { background-image: url("../imag/bannersecundario.jpg"); }
-#banner-servicios   { background-image: url("../imag/bannersecundario.jpg"); }
+#banner-contacto {
+    background-image: url("../imag/bannersecundario.jpg");
+}
+
+#banner-modelos {
+    background-image: url("../imag/bannersecundario.jpg");
+}
+
+#banner-nosotros {
+    background-image: url("../imag/bannersecundario.jpg");
+}
+
+#banner-reservas {
+    background-image: url("../imag/bannersecundario.jpg");
+}
+
+#banner-servicios {
+    background-image: url("../imag/bannersecundario.jpg");
+}
 
 /* Posicionamiento pegajoso — mantiene el elemento
    visible en la parte superior al hacer scroll */
@@ -266,7 +291,7 @@ button, input, select, textarea, label {
 .seccion-principal {
     height: 80vh;
     background: linear-gradient(rgba(10, 29, 55, 0.7), rgba(10, 29, 55, 0.7)),
-                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80');
+        url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -290,15 +315,15 @@ button, input, select, textarea, label {
     font-size: 15px;
     margin-bottom: 15px;
     display: block;
-    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-.botones-grupo a{
+.botones-grupo a {
     text-decoration: none;
     color: white;
 }
 
-.logotipo a{
+.logotipo a {
     text-decoration: none;
     color: inherit;
 }
@@ -443,7 +468,8 @@ button, input, select, textarea, label {
     margin-bottom: 8px;
 }
 
-.campo select, .campo input {
+.campo select,
+.campo input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -478,7 +504,8 @@ button, input, select, textarea, label {
 .tarjeta-coche {
     border: 1px solid #eee;
     background: #fff;
-    overflow: hidden; /* Evita que las fotos se salgan del borde */
+    overflow: hidden;
+    /* Evita que las fotos se salgan del borde */
 }
 
 .espacio-imagen {
@@ -591,7 +618,7 @@ button, input, select, textarea, label {
 .tarjeta-testimonio {
     background: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     text-align: left;
     padding: 40px;
     transition: transform 0.3s ease;
@@ -669,7 +696,7 @@ button, input, select, textarea, label {
     background: var(--blanco);
     color: var(--texto-oscuro);
     border-left: 4px solid var(--azul-skylux);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .cuadro-paso-02 .mini-titulo {
@@ -821,7 +848,7 @@ button, input, select, textarea, label {
 /* Efecto focus global (muy pro) */
 .form-newsletter:focus-within {
     border-color: var(--celeste);
-    box-shadow: 0 0 0 3px rgba(30,144,255,0.15);
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.15);
 }
 
 /* INPUT */
@@ -910,19 +937,47 @@ button, input, select, textarea, label {
 
 /* Animación flotante del logotipo */
 @keyframes floating {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-5px);
     }
 }
 
+/* -------------------------------- */
+/* Tablet                           */
+/* -------------------------------- */
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .nav-menu-link {
+        font-size: 0.8rem;
+    }
+}
 
 /* -------------------------------- */
-/* Responsive                       */
+/* Celular                          */
 /* -------------------------------- */
 @media (max-width: 768px) {
+
+    .container {
+        max-width: 95%;
+    }
+
+    .enlaces-nav {
+        display: none;
+    }
+
+    .nav-menu-toggle {
+        display: block;
+    }
+
     .fila-detalles {
         grid-template-columns: 1fr;
     }
@@ -940,15 +995,149 @@ button, input, select, textarea, label {
         max-width: 100%;
     }
 
-    /* Reduce el padding vertical en móvil */
     .padding-xl {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    .navegacion {
+        position: relative;
+    }
+
+    .nav-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-12px);
+        width: 85%;
+        background: white;
+        padding: 15px 20px;
+        gap: 5px;
+        z-index: 999;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .nav-open.nav-visible {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    .enlaces-nav:first-of-type.nav-open {
+        top: 65px;
+        border-radius: 12px;
+    }
+
+    .enlaces-nav:last-of-type.nav-open {
+        top: 230px;
+        padding-top: 0;
+        box-shadow: none;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .nav-open .nav-menu-link {
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .nav-open .nav-menu-link-active {
+        background-color: var(--celeste);
+        color: white;
+    }
+
+    .nav-open .nav-menu-link:hover {
+        background-color: var(--gris-fondo);
+        color: var(--azul-skylux);
+    }
+
+    .formulario-filtro {
+        grid-template-columns: 1fr;
+    }
 }
 
+/* -------------------------------- */
+/* Testimonios — ajuste intermedio  */
+/* -------------------------------- */
 @media (max-width: 600px) {
     .testimonios {
         padding: 50px 20px;
     }
 }
+
+/* -------------------------------- */
+/* Celular pequeño                  */
+/* -------------------------------- */
+@media (max-width: 480px) {
+
+    /* Topbar — todo en columna y centrado */
+    .topbar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .topbar-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .topbar-social {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Header — logo más pequeño */
+    .logotipo h1 {
+        font-size: 18px;
+    }
+
+    .cabecera {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* Hero — título más pequeño y texto con padding */
+    .seccion-principal {
+        padding: 0 20px;
+    }
+
+    .seccion-principal h1 {
+        font-size: 36px;
+    }
+
+    .etiqueta {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    /* Hero — botones en columna */
+    .botones-grupo {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Footer nav — una sola columna */
+    .fila-navegacion {
+        grid-template-columns: 1fr;
+    }
+
+    /* Títulos de sección más pequeños */
+    .titulo-seccion h2 {
+        font-size: 24px;
+    }
+
+    .bloque-contenido-nosotros h2 {
+        font-size: 30px;
+    }
+}
+
