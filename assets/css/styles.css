@@ -1439,7 +1439,6 @@ label {
     padding: 0;
     overflow: hidden;
     border-radius: 8px;
-    object-position: center 60%; 
 }
 
 /* Imagen de la tarjeta de auto */
@@ -1447,6 +1446,7 @@ label {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    object-position: center 60%;
 }
 
 /* Cuerpo de la tarjeta de auto */
@@ -1533,14 +1533,6 @@ label {
 }
 
 /* Botón del híbrido */
-.tarjeta-hibrido .btn-hibrido {
-    display: block;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-}
-
-/* Botón del híbrido */
 .tarjeta-hibrido .btn-hibrido,
 .tarjeta-hibrido .btn-ver-detalle {
     display: block;
@@ -1553,7 +1545,7 @@ label {
     text-decoration: none;
     margin-top: 10px;
     transition: all 0.3s ease;
-    background: transparent;  /* ← esto neutraliza el fondo negro */
+    background: transparent;
 }
 
 .tarjeta-hibrido .btn-ver-detalle:hover {
@@ -1907,6 +1899,53 @@ label {
 /* -------------------------------- */
 @media (max-width: 768px) {
 
+    /* Tipografía general */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Secciones */
+    .padding-xl {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* Títulos de sección */
+    .titulo-seccion {
+        margin-bottom: 30px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Banner */
+    .page-title {
+        height: 220px;
+    }
+
+    .page-title-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .page-title-content p {
+        font-size: 0.9rem;
+    }
+
+    .modelotop-video {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        margin-top: 0; /* ← elimina el margen negativo en móvil */
+    }
+
     .container {
         max-width: 95%;
     }
@@ -1934,11 +1973,6 @@ label {
 
     .bloque-imagen-nosotros {
         max-width: 100%;
-    }
-
-    .padding-xl {
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .navegacion {
@@ -2011,13 +2045,17 @@ label {
         width: 100%;
     }
 
-    .modal-cuerpo {
-        grid-template-columns: 1fr;
-    }
-
     .modal-imagen {
         border-radius: 8px 8px 0 0;
         min-height: 220px;
+    }
+
+    .form-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .form-reserva {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -2036,6 +2074,21 @@ label {
 /* Celular pequeño                  */
 /* -------------------------------- */
 @media (max-width: 480px) {
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    h3 { font-size: 1rem; }
+
+    .padding-xl {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .modelotop-video {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
 
     .topbar-container {
         flex-direction: column;
