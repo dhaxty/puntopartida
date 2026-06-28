@@ -928,8 +928,16 @@ label {
     color: var(--blanco);
     border: 1px solid var(--blanco);
     text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
+/* Visible cuando el usuario baja la página */
+.scroll-up-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /* -------------------------------- */
 /* Efectos visuales                 */
@@ -945,6 +953,42 @@ label {
 
     50% {
         transform: translateY(-5px);
+    }
+}
+
+/* -------------------------------- */
+/* Pantalla Laptop                  */
+/* -------------------------------- */
+@media (max-width: 1200px) {
+
+    /* Contenedor — un poco más ancho que en desktop */
+    .container {
+        max-width: 80%;
+    }
+
+    /* Hero — título ligeramente más pequeño */
+    .seccion-principal h1 {
+        font-size: 50px;
+    }
+
+    /* Nosotros — reduce gap entre imagen y contenido */
+    .contenedor-flex {
+        gap: 40px;
+    }
+
+    .bloque-contenido-nosotros h2 {
+        font-size: 38px;
+    }
+
+    /* Teléfono destacado — un poco más pequeño */
+    .telefono-destacado {
+        font-size: 26px;
+    }
+
+    /* Footer — ajuste del grid inferior */
+    .fila-detalles {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
     }
 }
 
