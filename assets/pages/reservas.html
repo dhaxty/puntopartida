@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,25 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Icono de la pagina-->
-    <link rel="shortcut icon" href="../imag/logo.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="../imag/logo.ico" type="image/x-icon">
 
     <!-- Fuente de letra: Poppins y Nunito Sans (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Enlazar HTML con la librería de iconos de font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
     <!-- Barra Superior-->
-    <section id="topbar" class="padding-xs"> 
+    <section id="topbar" class="padding-xs">
         <div class="container">
             <div class="topbar-container">
                 <div class="topbar-contacts">
@@ -42,12 +46,12 @@
 
                     <a target="_blank" href="https://www.instagram.com/puntopartida/">
                         <i class="fa-brands fa-instagram"></i>
-                    </a>      
+                    </a>
 
                     <a target="_blank" href="https://www.youtube.com/channel/puntopartida">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                </div> <!-- Fin de topbar social--> 
+                </div> <!-- Fin de topbar social-->
             </div> <!-- Fin de topbar container-->
         </div> <!-- Fin de container-->
     </section> <!-- Fin del topbar-->
@@ -102,6 +106,211 @@
                 </p>
             </div>
         </section> <!-- Fin de la sección principal -->
+
+
+        <!-- FORMULARIO DE RESERVA -->
+        <section class="reserva-cita padding-xl">
+            <div class="container">
+
+                <!-- Título -->
+                <div class="titulo-seccion">
+
+                    <span class="subtitulo">AGENDA TU EXPERIENCIA</span>
+
+                    <h2>Reserva una cita personalizada</h2>
+
+                    <p>
+                        Completa el formulario y uno de nuestros asesores
+                        se pondrá en contacto contigo.
+                    </p>
+
+                </div>
+
+                <!-- Formulario -->
+                <form class="form-reserva">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Apellido</label>
+                        <input type="text" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="campo">
+                        <label>Correo electrónico</label>
+                        <input type="email" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="+51 999 999 999">
+                    </div>
+                    <div class="campo">
+                        <label>Fecha</label>
+                        <input type="date">
+                    </div>
+                    <div class="campo">
+                        <label>Hora</label>
+                        <input type="time">
+                    </div>
+                    <div class="campo">
+                        <label>Vehículo de interés</label>
+                        <select name="vehiculo">
+                            <option value="">Selecciona un vehículo</option>
+                            <option value="toyota-corolla">Toyota Corolla</option>
+                            <option value="mazda-3">Mazda 3</option>
+                            <option value="honda-civic">Honda Civic</option>
+                            <option value="toyota-camry">Toyota Camry</option>
+                            <option value="kia-k5">Kia K5</option>
+                            <option value="audi-a4">Audi A4</option>
+                            <option value="hyundai-elantra">Hyundai Elantra</option>
+                            <option value="mazda-6">Mazda 6</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Tipo de cita</label>
+                        <select name="tipo-cita">
+                            <option value="">Selecciona una opción</option>
+                            <option value="presencial">Cita presencial</option>
+                            <option value="virtual">Cita virtual</option>
+                            <option value="prueba">Prueba de manejo</option>
+                            <option value="financiamiento">Consulta de financiamiento</option>
+                        </select>
+                    </div>
+                    <div class="campo campo-completo">
+                        <label>Mensaje adicional</label>
+                        <textarea placeholder="Escribe información adicional..."></textarea>
+                    </div>
+                    <div class="campo-completo">
+                        <button type="submit" class="btn-primario">Reservar cita</button>
+                    </div>
+                </form>
+
+            </div>
+        </section><!-- FIN FORMULARIO -->
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios-reserva padding-xl">
+            <div class="container">
+
+                <div class="contenedor-flex">
+
+                    <!-- Imagen -->
+                    <div class="bloque-imagen-nosotros">
+
+                        <img src="../imag/PRUEBAMANEJO.png" class="img-fluid">
+
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="bloque-contenido-nosotros">
+
+                        <span class="subtitulo">EXPERIENCIA EXCLUSIVA</span>
+                        <h2>Beneficios de reservar con nosotros</h2>
+
+                        <p>
+                            Disfruta una experiencia personalizada junto a
+                            especialistas apasionados por el mundo automotriz.
+                        </p>
+
+
+                        <!-- Beneficio -->
+                        <div class="beneficio-item">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+                                <h4>Prueba de Manejo Premium</h4>
+                                <p>
+                                    Conduce el vehículo que deseas antes
+                                    de tomar una decisión.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Beneficio -->
+                        <div class="beneficio-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Asesoría Especializada</h4>
+
+                                <p>
+                                    Nuestro equipo resolverá todas tus dudas
+                                    y te acompañará durante el proceso.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Beneficio -->
+                        <div class="beneficio-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div>
+                                <h4>Atención Personalizada</h4>
+                                <p>
+                                    Diseñamos una experiencia adaptada
+                                    completamente a tus necesidades.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- FIN BENEFICIOS -->
+
+        <!-- FAQ -->
+        <section class="faq-reservas padding-xl">
+            <div class="container">
+
+                <!-- Título -->
+                <div class="titulo-seccion">
+
+                    <span class="subtitulo">PREGUNTAS FRECUENTES</span>
+                    <h2>Resolvemos tus dudas</h2>
+
+                </div>
+
+
+                <!-- Contenedor FAQ -->
+                <div class="contenedor-faq">
+
+                    <!-- Item -->
+                    <div class="faq-item">
+
+                        <h3>¿La reserva tiene algún costo?</h3>
+                        <p>No, las reservas y pruebas de manejo son completamente gratuitas.</p>
+
+                    </div>
+
+
+                    <!-- Item -->
+                    <div class="faq-item">
+
+                        <h3>¿Qué documentos necesito?</h3>
+                        <p>Solo necesitas un documento de identidad y licencia de conducir vigente.</p>
+
+                    </div>
+
+
+                    <!-- Item -->
+                    <div class="faq-item">
+
+                        <h3>¿Puedo cancelar mi cita?</h3>
+                        <p>Sí, puedes modificar o cancelar tu reserva en cualquier momento.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- FIN FAQ -->
+
 
 
     </main> <!-- Fin del contenido principal -->
@@ -165,10 +374,10 @@
                     </ul>
                 </div>
             </div> <!-- Fin de columnas de navegación -->
-    
+
             <!-- Línea separadora -->
             <hr class="separador-footer">
-    
+
             <!-- Fila inferior - marca, contacto y newsletter -->
             <div class="fila-detalles">
 
@@ -177,10 +386,11 @@
                     <div class="logotipo">
                         <h1>PUNTO<span>PARTIDA</span></h1>
                     </div>
-                    <p>Expertos en la selección y entrega de los vehículos más exclusivos del mundo. Tu viaje comienza aquí.</p>
-                    <p class="copyright">© 2026 PUNTO PARTIDA - Todos los derechos reservados</p>
+                    <p>Expertos en la selección y entrega de los vehículos más exclusivos del mundo. Tu viaje comienza
+                        aquí.</p>
+                    <p class="copyright">© 2026 PUNTO PARTIDA.</p>
                 </div>
-    
+
                 <!-- Bloque contacto -->
                 <div class="bloque-contacto">
                     <h4>OFICINA CENTRAL</h4>
@@ -189,15 +399,16 @@
                     <p><a href="mailto:info@puntopartida.com">info@puntopartida.com</a></p>
                     <p>912-345-678</p>
                 </div>
-    
+
                 <!-- Bloque newsletter -->
                 <div class="bloque-newsletter">
                     <h3>Recibe Últimas Novedades y Ofertas</h3>
                     <p>Suscríbete para no perderte nuestras próximas subastas y lanzamientos.</p>
                     <form class="form-newsletter">
-                        <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
+                        <input type="email" required placeholder="Tu correo electrónico"
+                            aria-label="Correo electrónico para newsletter">
                         <button type="submit">Unirse</button>
-                    </form>                    
+                    </form>
                 </div>
 
             </div> <!-- Fin de la fila inferior -->
@@ -214,4 +425,5 @@
 </body>
 <!-- Enlazar el HTML con la libreria de Javascript-->
 <script src="../js/scripts.js"></script>
+
 </html>
