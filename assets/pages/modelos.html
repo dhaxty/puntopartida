@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos de autos</title>
     <link rel="stylesheet" href="../css/styles.css">
- 
+
     <!-- Icono de la pagina-->
     <link rel="shortcut icon" href="../imag/logo.ico" type="image/x-icon">
- 
+
     <!-- Fuente de letra: Poppins y Nunito Sans (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
- 
+
     <!-- Enlazar HTML con la librería de iconos de font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
- 
+
 <body>
     <!-- Barra Superior-->
     <section id="topbar" class="padding-xs">
@@ -52,40 +52,40 @@
             </div>
         </div>
     </section>
- 
- 
+
+
     <!-- Cabecera de página -->
     <header class="cabecera padding-xs sticky-top">
         <div class="container">
             <div class="navegacion">
- 
+
                 <nav class="enlaces-nav">
                     <a class="nav-menu-link" href="../../index.html">Inicio</a>
                     <a class="nav-menu-link" href="nosotros.html">Nosotros</a>
                     <a class="nav-menu-link nav-menu-link-active" href="modelos.html">Modelos</a>
                 </nav>
- 
+
                 <div class="logotipo">
                     <a href="../../index.html">
                         <h1>PUNTO<span>PARTIDA</span></h1>
                     </a>
                 </div>
- 
+
                 <nav class="enlaces-nav">
                     <a class="nav-menu-link" href="reservas.html">Reservas</a>
                     <a class="nav-menu-link" href="servicios.html">Servicios</a>
                     <a class="nav-menu-link" href="contacto.html">Contacto</a>
                 </nav>
- 
+
                 <div class="nav-menu-toggle">
                     <i class="fa-solid fa-bars"></i>
                 </div>
- 
+
             </div>
         </div>
     </header>
- 
- 
+
+
     <!-- Contenido principal -->
     <main>
         <!-- Sección banner principal -->
@@ -96,8 +96,8 @@
                 <p>Explora la colección más selecta de vehículos de alta gama y rendimiento deportivo.</p>
             </div>
         </section>
- 
- 
+
+
         <!-- Video de youtube -->
         <section class="padding-xl">
             <div class="container">
@@ -109,8 +109,8 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
- 
- 
+
+
         <!-- SECCIÓN 1: NUESTROS AUTOS -->
         <section class="padding-xl" id="nuestros-autos">
             <div class="container">
@@ -118,7 +118,7 @@
                     <span class="subtitulo">NUESTROS AUTOS</span>
                     <h2>Modelos seleccionados para ti</h2>
                 </div>
- 
+
                 <div class="rejilla-testimonios">
                     <!-- Auto 1: Toyota Corolla -->
                     <div class="tarjeta-testimonio tarjeta-auto">
@@ -126,24 +126,48 @@
                         <div class="cuerpo-auto">
                             <h3 class="nombre-auto">Toyota Corolla</h3>
                             <span class="telefono-destacado precio-auto">$24,900</span>
-                            <a href="#" class="btn-primario btn-ver-detalle">Ver detalle</a>
+                            <a href="#"
+                                class="btn-primario btn-ver-detalle"
+                                data-foto="../imag/toyota-corolla.jpg"
+                                data-nombre="Toyota Corolla"
+                                data-precio="$24,900"
+                                data-anio="2025"
+                                data-km="15,000 km"
+                                data-motor="1.8L 4 cilindros"
+                                data-transmision="Automática CVT"
+                                data-color="Blanco Perla"
+                                data-descripcion="El Toyota Corolla es sinónimo de confiabilidad y eficiencia. Con un diseño moderno y tecnología de última generación, es la elección perfecta para quienes buscan calidad sin compromisos.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Auto 2: Mazda 3 -->
                     <div class="tarjeta-testimonio tarjeta-auto">
                         <img src="../imag/mazda-3.jpg" alt="Mazda 3" class="imagen-auto">
                         <div class="cuerpo-auto">
                             <h3 class="nombre-auto">Mazda 3</h3>
                             <span class="telefono-destacado precio-auto">$27,500</span>
-                            <a href="#" class="btn-primario btn-ver-detalle">Ver detalle</a>
+                            <a href="#"
+                                class="btn-primario btn-ver-detalle"
+                                data-foto="../imag/mazda-3.jpg"
+                                data-nombre="Mazda 3"
+                                data-precio="$27,500"
+                                data-anio="2025"
+                                data-km="8,000 km"
+                                data-motor="2.0L SKYACTIV-G"
+                                data-transmision="Automática 6 velocidades"
+                                data-color="Rojo Soul"
+                                data-descripcion="El Mazda 3 combina un diseño Kodo cautivador con una conducción dinámica y placentera. Su acabado interior premium lo posiciona por encima de la competencia en su segmento.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
- 
- 
+
+
         <!-- SECCIÓN 2: MODELOS HÍBRIDOS -->
         <section class="seccion-hibridos padding-xl">
             <div class="container">
@@ -151,7 +175,7 @@
                     <span class="subtitulo">MODELOS HÍBRIDOS</span>
                     <h2>Los 6 más vendidos</h2>
                 </div>
- 
+
                 <div class="rejilla-testimonios">
                     <!-- Híbrido 1: Honda Civic -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
@@ -163,10 +187,22 @@
                                 <i class="fa-solid fa-gauge"></i> 12,000 km
                             </p>
                             <span class="precio-hibrido">$26,000</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/honda-civic.jpg"
+                                data-nombre="Honda Civic"
+                                data-precio="$26,000"
+                                data-anio="2026"
+                                data-km="12,000 km"
+                                data-motor="1.5L Turbo Híbrido"
+                                data-transmision="CVT"
+                                data-color="Azul Sonic"
+                                data-descripcion="El Honda Civic Híbrido ofrece una conducción ágil y eficiente gracias a su sistema de propulsión electrificado. Bajo consumo, alto rendimiento y tecnología Honda Sensing de serie.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Híbrido 2: Toyota Camry -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
                         <img src="../imag/toyota-camry.jpg" alt="Toyota Camry" class="imagen-hibrido">
@@ -177,10 +213,22 @@
                                 <i class="fa-solid fa-gauge"></i> 18,500 km
                             </p>
                             <span class="precio-hibrido">$32,400</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/toyota-camry.jpg"
+                                data-nombre="Toyota Camry"
+                                data-precio="$32,400"
+                                data-anio="2025"
+                                data-km="18,500 km"
+                                data-motor="2.5L Híbrido Doble"
+                                data-transmision="Automática E-CVT"
+                                data-color="Gris Magnético"
+                                data-descripcion="El Toyota Camry Híbrido redefine el segmento medio-alto con un interior refinado, tecnología avanzada de seguridad y un sistema híbrido que prioriza la eficiencia sin sacrificar el placer al volante.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Híbrido 3: Kia K5 -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
                         <img src="../imag/kia-k5.jpg" alt="Kia K5" class="imagen-hibrido">
@@ -191,10 +239,22 @@
                                 <i class="fa-solid fa-gauge"></i> 5,000 km
                             </p>
                             <span class="precio-hibrido">$29,100</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/kia-k5.jpg"
+                                data-nombre="Kia K5"
+                                data-precio="$29,100"
+                                data-anio="2026"
+                                data-km="5,000 km"
+                                data-motor="1.6L Turbo GDI"
+                                data-transmision="Automática 8 velocidades"
+                                data-color="Negro Panther"
+                                data-descripcion="El Kia K5 destaca por su diseño fastback audaz y su cabina tecnológica. Con pantalla de 10.25 pulgadas y asistentes de conducción de última generación, es el sedán que marca tendencia.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Híbrido 4: Audi A4 -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
                         <img src="../imag/audi-a4.jpg" alt="Audi A4" class="imagen-hibrido">
@@ -205,10 +265,22 @@
                                 <i class="fa-solid fa-gauge"></i> 22,000 km
                             </p>
                             <span class="precio-hibrido">$45,000</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/audi-a4.jpg"
+                                data-nombre="Audi A4"
+                                data-precio="$45,000"
+                                data-anio="2025"
+                                data-km="22,000 km"
+                                data-motor="2.0L TFSI mild-hybrid"
+                                data-transmision="S tronic 7 velocidades"
+                                data-color="Plata Floret"
+                                data-descripcion="El Audi A4 encarna la ingeniería alemana en su máxima expresión. Su sistema mild-hybrid mejora la eficiencia sin renunciar a los 204 CV del motor TFSI, con un interior virtual cockpit que eleva la experiencia de conducción.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Híbrido 5: Hyundai Elantra -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
                         <img src="../imag/hyundai-elantra.jpg" alt="Hyundai Elantra" class="imagen-hibrido">
@@ -219,10 +291,22 @@
                                 <i class="fa-solid fa-gauge"></i> 8,000 km
                             </p>
                             <span class="precio-hibrido">$23,800</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/hyundai-elantra.jpg"
+                                data-nombre="Hyundai Elantra"
+                                data-precio="$23,800"
+                                data-anio="2026"
+                                data-km="8,000 km"
+                                data-motor="1.6L GDI Híbrido"
+                                data-transmision="DCT 6 velocidades"
+                                data-color="Blanco Celestial"
+                                data-descripcion="El Hyundai Elantra Híbrido sorprende con su diseño paramétrico de vanguardia y su sistema SmartSense de asistencia al conductor. Eficiencia excepcional y una garantía de 5 años que brinda total tranquilidad.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
- 
+
                     <!-- Híbrido 6: Mazda 6 -->
                     <div class="tarjeta-testimonio tarjeta-hibrido">
                         <img src="../imag/mazda-6.jpg" alt="Mazda 6" class="imagen-hibrido">
@@ -233,14 +317,26 @@
                                 <i class="fa-solid fa-gauge"></i> 14,000 km
                             </p>
                             <span class="precio-hibrido">$31,200</span>
-                            <a href="#" class="btn-secundario btn-hibrido">Ver detalle</a>
+                            <a href="#"
+                                class="btn-secundario btn-ver-detalle"
+                                data-foto="../imag/mazda-6.jpg"
+                                data-nombre="Mazda 6"
+                                data-precio="$31,200"
+                                data-anio="2025"
+                                data-km="14,000 km"
+                                data-motor="2.5L SKYACTIV-G"
+                                data-transmision="Automática 6 velocidades"
+                                data-color="Azul Polimetálico"
+                                data-descripcion="El Mazda 6 es el sedán premium por excelencia de la marca. Con acabados de lujo, tapicería en cuero y un sonido BOSE de 11 altavoces, ofrece una experiencia que va más allá de lo esperado en su categoría.">
+                                Ver detalle
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
- 
- 
+
+
         <!-- SECCIÓN 3: SEMINUEVOS CERTIFICADOS -->
         <section class="padding-xl">
             <div class="container">
@@ -248,49 +344,97 @@
                     <span class="subtitulo">SEMINUEVOS CERTIFICADOS</span>
                     <h2>Autos de segunda en excelente estado</h2>
                 </div>
- 
+
                 <div class="rejilla-testimonios">
                     <!-- Seminuevo 1: Kia Cerato -->
                     <div class="tarjeta-testimonio tarjeta-seminuevo">
                         <img src="../imag/kia-cerato.jpg" alt="Kia Cerato" class="imagen-seminuevo">
                         <h4>Kia Cerato</h4>
                         <span class="precio-seminuevo">$16,500</span>
-                        <a href="#" class="btn-primario btn-seminuevo">Ver detalle</a>
+                        <a href="#"
+                            class="btn-primario btn-seminuevo btn-ver-detalle"
+                            data-foto="../imag/kia-cerato.jpg"
+                            data-nombre="Kia Cerato"
+                            data-precio="$16,500"
+                            data-anio="2023"
+                            data-km="35,000 km"
+                            data-motor="2.0L MPI"
+                            data-transmision="Automática 6 velocidades"
+                            data-color="Rojo Chili"
+                            data-descripcion="Kia Cerato seminuevo certificado con revisión técnica completa. Incluye garantía de 12 meses sobre tren motriz, historial de mantenimiento verificado y un estado de conservación impecable.">
+                            Ver detalle
+                        </a>
                     </div>
- 
+
                     <!-- Seminuevo 2: Toyota Yaris -->
                     <div class="tarjeta-testimonio tarjeta-seminuevo">
                         <img src="../imag/toyota-yaris.jpg" alt="Toyota Yaris" class="imagen-seminuevo">
                         <h4>Toyota Yaris</h4>
                         <span class="precio-seminuevo">$14,200</span>
-                        <a href="#" class="btn-primario btn-seminuevo">Ver detalle</a>
+                        <a href="#"
+                            class="btn-primario btn-seminuevo btn-ver-detalle"
+                            data-foto="../imag/toyota-yaris.jpg"
+                            data-nombre="Toyota Yaris"
+                            data-precio="$14,200"
+                            data-anio="2022"
+                            data-km="42,000 km"
+                            data-motor="1.5L VVT-i"
+                            data-transmision="Automática CVT"
+                            data-color="Plata Metalizado"
+                            data-descripcion="Toyota Yaris certificado con único dueño y servicio oficial en todos sus mantenimientos. Ideal para ciudad, bajo consumo de combustible y excelente relación calidad-precio en el segmento subcompacto.">
+                            Ver detalle
+                        </a>
                     </div>
- 
+
                     <!-- Seminuevo 3: Nissan Sentra -->
                     <div class="tarjeta-testimonio tarjeta-seminuevo">
                         <img src="../imag/nissan-sentra.jpg" alt="Nissan Sentra" class="imagen-seminuevo">
                         <h4>Nissan Sentra</h4>
                         <span class="precio-seminuevo">$17,900</span>
-                        <a href="#" class="btn-primario btn-seminuevo">Ver detalle</a>
+                        <a href="#"
+                            class="btn-primario btn-seminuevo btn-ver-detalle"
+                            data-foto="../imag/nissan-sentra.jpg"
+                            data-nombre="Nissan Sentra"
+                            data-precio="$17,900"
+                            data-anio="2023"
+                            data-km="28,000 km"
+                            data-motor="2.0L DOHC"
+                            data-transmision="XTronic CVT"
+                            data-color="Negro Super Negro"
+                            data-descripcion="Nissan Sentra seminuevo en excelente estado. Equipado con pantalla táctil de 8 pulgadas, cámara de reversa y control de crucero. Historial limpio sin accidentes y llantas en perfectas condiciones.">
+                            Ver detalle
+                        </a>
                     </div>
- 
+
                     <!-- Seminuevo 4: Volkswagen Jetta -->
                     <div class="tarjeta-testimonio tarjeta-seminuevo">
                         <img src="../imag/volkswagen-jetta.jpg" alt="Volkswagen Jetta" class="imagen-seminuevo">
                         <h4>Volkswagen Jetta</h4>
                         <span class="precio-seminuevo">$19,000</span>
-                        <a href="#" class="btn-primario btn-seminuevo">Ver detalle</a>
+                        <a href="#"
+                            class="btn-primario btn-seminuevo btn-ver-detalle"
+                            data-foto="../imag/volkswagen-jetta.jpg"
+                            data-nombre="Volkswagen Jetta"
+                            data-precio="$19,000"
+                            data-anio="2023"
+                            data-km="20,000 km"
+                            data-motor="1.4L TSI Turbo"
+                            data-transmision="DSG 7 velocidades"
+                            data-color="Blanco Candy"
+                            data-descripcion="Volkswagen Jetta seminuevo con baja kilometría y todo el servicio oficial al día. Su motor turbo de 150 CV ofrece una conducción deportiva y eficiente, respaldada por la solidez y precisión alemana.">
+                            Ver detalle
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
- 
- 
+
+
         <!-- SECCIÓN: VENDE TU AUTO -->
         <section class="seccion-vende-auto padding-xl" id="vender-auto">
             <div class="container">
                 <div class="contenedor-flex">
- 
+
                     <!-- Texto de Invitación -->
                     <div class="vende-texto">
                         <span class="subtitulo">VENDO MI AUTO</span>
@@ -300,7 +444,7 @@
                             para ofrecerte la mejor oferta del mercado de forma rápida y segura.
                         </p>
                     </div>
- 
+
                     <!-- Formulario -->
                     <div class="tarjeta-testimonio vende-formulario">
                         <form class="formulario-interno">
@@ -319,13 +463,13 @@
                             <button type="submit" class="btn-primario btn-enviar">Enviar Información</button>
                         </form>
                     </div>
- 
+
                 </div>
             </div>
         </section>
     </main>
- 
- 
+
+
     <!-- Pie de página -->
     <footer class="pie-pagina">
         <div class="container">
@@ -382,15 +526,16 @@
                     </ul>
                 </div>
             </div>
- 
+
             <hr class="separador-footer">
- 
+
             <div class="fila-detalles">
                 <div class="bloque-marca">
                     <div class="logotipo">
                         <h1>PUNTO<span>PARTIDA</span></h1>
                     </div>
-                    <p>Expertos en la selección y entrega de los vehículos más exclusivos del mundo. Tu viaje comienza aquí.</p>
+                    <p>Expertos en la selección y entrega de los vehículos más exclusivos del mundo. Tu viaje comienza
+                        aquí.</p>
                     <p class="copyright">© 2026 PUNTO PARTIDA.</p>
                 </div>
                 <div class="bloque-contacto">
@@ -404,22 +549,67 @@
                     <h3>Recibe Últimas Novedades y Ofertas</h3>
                     <p>Suscríbete para no perderte nuestras próximas subastas y lanzamientos.</p>
                     <form class="form-newsletter">
-                        <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
+                        <input type="email" required placeholder="Tu correo electrónico"
+                            aria-label="Correo electrónico para newsletter">
                         <button type="submit">Unirse</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
- 
- 
+
+
     <!-- Botón scroll up -->
     <a href="#" class="scroll-up">
         <i class="fa-solid fa-angle-up"></i>
     </a>
- 
+
+    <!-- ========================================= -->
+    <!-- MODAL VER DETALLE                         -->
+    <!-- ========================================= -->
+    <div class="modal-overlay" id="modal-auto">
+        <div class="modal-contenido">
+            <button class="modal-cerrar" id="modal-cerrar">&times;</button>
+            <div class="modal-cuerpo">
+                <img src="" alt="" class="modal-imagen" id="modal-foto">
+                <div class="modal-info">
+                    <h2 class="modal-nombre" id="modal-nombre"></h2>
+                    <span class="modal-precio" id="modal-precio"></span>
+                    <hr class="modal-separador">
+                    <div class="modal-spec">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Año:</span>
+                        <strong id="modal-anio"></strong>
+                    </div>
+                    <div class="modal-spec">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>Kilometraje:</span>
+                        <strong id="modal-km"></strong>
+                    </div>
+                    <div class="modal-spec">
+                        <i class="fa-solid fa-engine"></i>
+                        <span>Motor:</span>
+                        <strong id="modal-motor"></strong>
+                    </div>
+                    <div class="modal-spec">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Transmisión:</span>
+                        <strong id="modal-transmision"></strong>
+                    </div>
+                    <div class="modal-spec">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Color:</span>
+                        <strong id="modal-color"></strong>
+                    </div>
+                    <hr class="modal-separador">
+                    <p class="modal-descripcion" id="modal-descripcion"></p>
+                    <a href="reservas.html" class="modal-btn-reservar">Reservar este vehículo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="../js/scripts.js"></script>
- 
+
 </html>
- 

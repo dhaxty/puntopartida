@@ -14,13 +14,13 @@
     --texto-suave: #666666;
     --blanco: #ffffff;
     /* Blanco */
- 
+
     /* Tipografías */
     --fuente-primaria: "Poppins", sans-serif;
     --fuente-secundaria: "Nunito Sans", sans-serif;
 }
- 
- 
+
+
 /* ================== */
 /* Selector universal */
 /* ================== */
@@ -29,38 +29,38 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
- 
+
+
 /* ------------------------- */
 /* Selector de tipo etiqueta */
 /* ------------------------- */
 html {
     scroll-behavior: smooth;
 }
- 
+
 body {
     font-family: var(--fuente-secundaria);
     color: var(--texto-oscuro);
     background-color: var(--blanco);
     line-height: 1.7;
 }
- 
+
 h1,
 h2,
 h3 {
     font-family: var(--fuente-primaria);
 }
- 
+
 p {
     margin-bottom: 20px;
     font-family: var(--fuente-secundaria);
 }
- 
+
 img,
 video {
     display: block;
 }
- 
+
 button,
 input,
 select,
@@ -68,42 +68,42 @@ textarea,
 label {
     font-family: inherit;
 }
- 
- 
+
+
 /* ----------------------- */
 /* Selectores de tipo class */
 /* ----------------------- */
- 
+
 .padding-xs {
     padding-top: 10px;
     padding-bottom: 10px;
 }
- 
+
 .padding-xl {
     padding-top: 90px;
     padding-bottom: 90px;
 }
- 
+
 .container {
     max-width: 70%;
     margin: auto;
 }
- 
+
 .img-fluid {
     width: 100%;
     height: auto;
 }
- 
+
 .video-fluid {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
 }
- 
+
 #video {
     background-color: var(--gris-fondo);
 }
- 
+
 .page-title {
     height: 300px;
     display: flex;
@@ -117,7 +117,7 @@ label {
     position: relative;
     overflow: hidden;
 }
- 
+
 .page-title::before {
     content: "";
     position: absolute;
@@ -125,51 +125,51 @@ label {
     background: linear-gradient(rgba(0, 0, 0, 0.60),
             rgba(0, 0, 0, 0.15));
 }
- 
+
 .page-title-content {
     position: relative;
     z-index: 1;
 }
- 
+
 .page-title-content h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
- 
+
 .page-title-content p {
     font-size: 1.1rem;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
- 
+
 #banner-contacto {
     background-image: url("../imag/bannersecundario.jpg");
 }
- 
+
 #banner-modelos {
     background-image: url("../imag/bannersecundario.jpg");
 }
- 
+
 #banner-nosotros {
     background-image: url("../imag/bannersecundario.jpg");
 }
- 
+
 #banner-reservas {
     background-image: url("../imag/bannersecundario.jpg");
 }
- 
+
 #banner-servicios {
     background-image: url("../imag/bannersecundario.jpg");
 }
- 
+
 .sticky-top {
     position: sticky;
     top: 0px;
     z-index: 1000;
     box-shadow: 0 0 3px 0 var(--gris-fondo);
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Selectores para el topbar        */
 /* -------------------------------- */
@@ -178,21 +178,21 @@ label {
     color: var(--blanco);
     font-size: 0.8rem;
 }
- 
+
 .topbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
- 
+
 .topbar-container a {
     color: var(--blanco);
     text-decoration: none;
     padding: 0px 5px;
 }
- 
- 
+
+
 /* -------------------------------------------- */
 /* Selectores para la barra de navegación        */
 /* -------------------------------------------- */
@@ -200,7 +200,7 @@ label {
     background: var(--blanco);
     border-bottom: 1px solid #ececec;
 }
- 
+
 .navegacion {
     display: flex;
     flex-direction: row;
@@ -208,34 +208,34 @@ label {
     align-items: center;
     gap: 40px;
 }
- 
+
 .logotipo h1 {
     font-size: 24px;
     letter-spacing: 1px;
     animation: floating 3s ease-in-out infinite;
 }
- 
+
 .logotipo span {
     color: var(--celeste);
 }
- 
+
 .nav-menu-toggle {
     font-size: 2rem;
     cursor: pointer;
     display: none;
 }
- 
+
 .enlaces-nav {
     display: flex;
     flex-direction: row;
     gap: 40px;
     flex: 1;
 }
- 
+
 .enlaces-nav:last-of-type {
     justify-content: flex-end;
 }
- 
+
 .nav-menu-link {
     display: inline-block;
     color: var(--azul-skylux);
@@ -247,18 +247,18 @@ label {
     font-size: 14px;
     text-transform: uppercase;
 }
- 
+
 .nav-menu-link:hover {
     background-color: var(--celeste);
     color: var(--blanco);
 }
- 
+
 .nav-menu-link-active {
     background-color: var(--celeste);
     color: var(--blanco);
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Sección principal (banner hero)  */
 /* -------------------------------- */
@@ -274,12 +274,12 @@ label {
     text-align: center;
     color: white;
 }
- 
+
 .seccion-principal h1 {
     font-size: 60px;
     margin-bottom: 20px;
 }
- 
+
 .etiqueta {
     color: var(--blanco);
     text-transform: uppercase;
@@ -290,17 +290,17 @@ label {
     display: block;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
- 
+
 .botones-grupo a {
     text-decoration: none;
     color: white;
 }
- 
+
 .logotipo a {
     text-decoration: none;
     color: inherit;
 }
- 
+
 .btn-primario {
     background: var(--celeste);
     color: white;
@@ -309,8 +309,9 @@ label {
     margin-right: 15px;
     font-family: var(--fuente-primaria);
     font-weight: bold;
+    text-decoration: none;
 }
- 
+
 .btn-secundario {
     background: transparent;
     border: 2px solid white;
@@ -318,16 +319,17 @@ label {
     padding: 15px 35px;
     font-family: var(--fuente-primaria);
     font-weight: bold;
+    text-decoration: none;
 }
- 
+
 .modelotop-video {
     text-align: center;
     margin-bottom: 30px;
     margin-top: -40px;
     letter-spacing: 7px;
 }
- 
- 
+
+
 /* ---------------------------------- */
 /* Sección Sobre Nosotros             */
 /* ---------------------------------- */
@@ -336,37 +338,37 @@ label {
     gap: 60px;
     align-items: center;
 }
- 
+
 .bloque-imagen-nosotros {
     flex: 1.2;
     background: #e0e0e0;
     border-radius: 4px;
 }
- 
+
 .bloque-imagen-nosotros img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     display: block;
 }
- 
+
 .bloque-contenido-nosotros {
     flex: 1;
 }
- 
+
 .bloque-contenido-nosotros h2 {
     font-size: 45px;
     color: var(--azul-skylux);
     margin: 15px 0;
 }
- 
+
 .subtitulo {
     color: var(--celeste);
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 14px;
 }
- 
+
 .cuadro-informativo-azul {
     background: var(--azul-skylux);
     color: white;
@@ -375,26 +377,26 @@ label {
     position: relative;
     padding: 40px;
 }
- 
+
 .mini-titulo {
     color: var(--celeste);
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
 }
- 
+
 .cuadro-informativo-azul h3 {
     font-size: 22px;
     margin: 10px 0;
     font-family: var(--fuente-primaria);
 }
- 
+
 .telefono-destacado {
     font-size: 32px;
     font-weight: bold;
     display: block;
 }
- 
+
 .enlace-saber-mas {
     color: var(--celeste);
     text-decoration: none;
@@ -405,12 +407,12 @@ label {
     margin-top: 10px;
     text-transform: uppercase;
 }
- 
+
 .enlace-saber-mas:hover {
     color: var(--azul-skylux);
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Sección Buscador de vehículos    */
 /* -------------------------------- */
@@ -419,20 +421,20 @@ label {
     padding-top: 30px;
     padding-bottom: 30px;
 }
- 
+
 .formulario-filtro {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
- 
+
 .campo label {
     display: block;
     font-size: 13px;
     font-weight: bold;
     margin-bottom: 8px;
 }
- 
+
 .campo select,
 .campo input {
     width: 100%;
@@ -440,7 +442,7 @@ label {
     border: 1px solid #ddd;
     outline: none;
 }
- 
+
 .btn-buscar {
     background: var(--azul-skylux);
     color: white;
@@ -449,8 +451,8 @@ label {
     cursor: pointer;
     padding: 12px 25px;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Sección Inventario destacado     */
 /* -------------------------------- */
@@ -458,33 +460,33 @@ label {
     text-align: center;
     margin-bottom: 50px;
 }
- 
+
 .contenedor-coches {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
- 
+
 .tarjeta-coche {
     border: 1px solid #eee;
     background: #fff;
     overflow: hidden;
 }
- 
+
 .espacio-imagen {
     height: 240px;
     background: #f0f0f0;
     position: relative;
     overflow: hidden;
 }
- 
+
 .espacio-imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
- 
+
 .precio {
     position: absolute;
     top: 20px;
@@ -494,11 +496,11 @@ label {
     font-weight: bold;
     z-index: 2;
 }
- 
+
 .detalles-coche {
     padding: 25px;
 }
- 
+
 .especificaciones {
     color: var(--texto-suave);
     font-size: 14px;
@@ -506,7 +508,7 @@ label {
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
 }
- 
+
 .btn-detalles {
     width: 100%;
     background: transparent;
@@ -515,50 +517,50 @@ label {
     font-weight: bold;
     padding: 12px;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Tabla Comparativa                */
 /* -------------------------------- */
 .tabla-comparativa {
     background-color: var(--gris-fondo);
 }
- 
+
 .tabla-responsive {
     overflow-x: auto;
 }
- 
+
 .tabla-modelos {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
     background: var(--blanco);
 }
- 
+
 .tabla-modelos thead {
     background-color: var(--azul-skylux);
     color: var(--blanco);
 }
- 
+
 .tabla-modelos th {
     padding: 18px 24px;
     text-align: left;
     font-family: var(--fuente-primaria);
     font-size: 14px;
 }
- 
+
 .tabla-modelos td {
     padding: 18px 24px;
     border-bottom: 1px solid #eee;
     color: var(--texto-oscuro);
 }
- 
+
 .tabla-modelos tbody tr:hover {
     background-color: #f0f4ff;
     transition: background 0.2s ease;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Sección Testimonios              */
 /* -------------------------------- */
@@ -566,13 +568,13 @@ label {
     background-color: #f8f9fa;
     text-align: center;
 }
- 
+
 .rejilla-testimonios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
- 
+
 .tarjeta-testimonio {
     background: #ffffff;
     border-radius: 8px;
@@ -581,24 +583,24 @@ label {
     padding: 40px;
     transition: transform 0.3s ease;
 }
- 
+
 .tarjeta-testimonio:hover {
     transform: translateY(-10px);
 }
- 
+
 .estrellas {
     color: #ffc107;
     margin-bottom: 15px;
     font-size: 18px;
 }
- 
+
 .comentario {
     font-style: italic;
     color: #444;
     line-height: 1.6;
     margin-bottom: 25px;
 }
- 
+
 .cliente {
     display: flex;
     align-items: center;
@@ -606,18 +608,18 @@ label {
     border-top: 1px solid #eee;
     padding-top: 20px;
 }
- 
+
 .avatar-texto strong {
     display: block;
     font-size: 16px;
     color: #1a1a1a;
 }
- 
+
 .avatar-texto span {
     font-size: 13px;
     color: #888;
 }
- 
+
 .titulo-seccion .subtitulo {
     color: #008cd4;
     font-weight: bold;
@@ -625,26 +627,26 @@ label {
     display: block;
     margin-bottom: 10px;
 }
- 
+
 .titulo-seccion h2 {
     font-size: 32px;
     margin-bottom: 15px;
     color: #1a1a1a;
 }
- 
+
 .titulo-seccion p {
     color: #666;
     margin-bottom: 50px;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Sección Proceso de compra        */
 /* -------------------------------- */
 .proceso-compra {
     background-color: var(--gris-fondo);
 }
- 
+
 .cuadro-paso-02 {
     margin-top: 0;
     background: var(--blanco);
@@ -652,30 +654,30 @@ label {
     border-left: 4px solid var(--azul-skylux);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
- 
+
 .cuadro-paso-02 .mini-titulo {
     color: var(--azul-skylux);
 }
- 
+
 .cuadro-paso-02 h3 {
     color: var(--azul-skylux);
 }
- 
+
 .cuadro-paso-02 p {
     color: var(--texto-suave);
 }
- 
+
 .contenedor-boton-proceso {
     text-align: center;
     margin-top: 20px;
 }
- 
+
 .btn-proceso {
     padding: 15px 40px;
     width: auto;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Pie de página                    */
 /* -------------------------------- */
@@ -685,11 +687,11 @@ label {
     padding-top: 60px;
     padding-bottom: 40px;
 }
- 
+
 .pie-pagina .container {
     max-width: 85%;
 }
- 
+
 .fila-navegacion {
     display: flex;
     justify-content: space-between;
@@ -697,90 +699,90 @@ label {
     gap: 20px;
     margin-bottom: 40px;
 }
- 
+
 .col-footer h4 {
     font-size: 14px;
     margin-bottom: 20px;
     letter-spacing: 1px;
     color: #ffffff;
 }
- 
+
 .col-footer ul {
     list-style: none;
 }
- 
+
 .col-footer ul li {
     margin-bottom: 10px;
 }
- 
+
 .col-footer ul li a {
     color: #adb5bd;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.3s;
 }
- 
+
 .col-footer ul li a:hover {
     color: #ffffff;
 }
- 
+
 .separador-footer {
     border: 0;
     border-top: 1px dashed #ffffff33;
     margin-bottom: 40px;
 }
- 
+
 .fila-detalles {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     gap: 40px;
 }
- 
+
 .bloque-marca .logotipo h1 {
     font-size: 24px;
     margin-bottom: 15px;
 }
- 
+
 .bloque-marca p {
     font-size: 13px;
     color: #adb5bd;
     line-height: 1.6;
     max-width: 300px;
 }
- 
+
 .copyright {
     margin-top: 20px;
     font-size: 11px !important;
     color: #6c757d !important;
 }
- 
+
 .bloque-contacto h4 {
     font-size: 14px;
     margin-bottom: 15px;
 }
- 
+
 .bloque-contacto p {
     font-size: 13px;
     color: #adb5bd;
     margin-bottom: 5px;
 }
- 
+
 .bloque-contacto a {
     color: #adb5bd;
     text-decoration: none;
 }
- 
+
 .bloque-newsletter h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
- 
+
 .bloque-newsletter p {
     font-size: 13px;
     color: #adb5bd;
     margin-bottom: 20px;
 }
- 
+
 .form-newsletter {
     display: flex;
     align-items: stretch;
@@ -791,12 +793,12 @@ label {
     max-width: 100%;
     transition: all 0.3s ease;
 }
- 
+
 .form-newsletter:focus-within {
     border-color: var(--celeste);
     box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.15);
 }
- 
+
 .form-newsletter input {
     flex: 1;
     padding: 14px 16px;
@@ -806,11 +808,11 @@ label {
     background: var(--blanco);
     color: var(--texto-oscuro);
 }
- 
+
 .form-newsletter input::placeholder {
     color: #999;
 }
- 
+
 .form-newsletter button {
     padding: 0 22px;
     border: none;
@@ -821,37 +823,37 @@ label {
     transition: all 0.3s ease;
     white-space: nowrap;
 }
- 
+
 .form-newsletter button:hover {
     background: #0077cc;
 }
- 
+
 .form-newsletter button:active {
     transform: scale(0.97);
 }
- 
+
 .form-contacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
- 
+
 .form-contacto .campo {
     display: flex;
     flex-direction: column;
 }
- 
+
 .form-contacto textarea {
     padding: 12px;
     border: 1px solid #ddd;
     resize: none;
 }
- 
+
 .form-contacto button {
     grid-column: 1 / -1;
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Botón scroll-up                  */
 /* -------------------------------- */
@@ -871,13 +873,13 @@ label {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
- 
+
 .scroll-up-visible {
     opacity: 1;
     pointer-events: auto;
 }
- 
- 
+
+
 /* ========================= */
 /* Formulario vender vehículo */
 /* ========================= */
@@ -886,13 +888,13 @@ label {
     gap: 20px;
     margin-top: 40px;
 }
- 
+
 .fila-formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
- 
+
 .formulario-venta input,
 .formulario-venta select,
 .formulario-venta textarea {
@@ -902,12 +904,12 @@ label {
     resize: none;
     border-radius: 4px;
 }
- 
+
 .formulario-venta button {
     width: 250px;
 }
- 
- 
+
+
 /* ========================================= */
 /* SERVICIOS DESTACADOS                      */
 /* ========================================= */
@@ -916,19 +918,19 @@ label {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
- 
+
 .tarjeta-servicio {
     background: var(--blanco);
     border: 1px solid #eeeeee;
     padding: 40px 30px;
     transition: all 0.3s ease;
 }
- 
+
 .tarjeta-servicio:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
- 
+
 .icono-servicio {
     width: 70px;
     height: 70px;
@@ -940,17 +942,17 @@ label {
     font-size: 28px;
     margin-bottom: 25px;
 }
- 
+
 .tarjeta-servicio h3 {
     margin-bottom: 15px;
     color: var(--azul-skylux);
 }
- 
+
 .tarjeta-servicio p {
     color: var(--texto-suave);
     margin-bottom: 20px;
 }
- 
+
 .enlace-servicio {
     color: var(--celeste);
     text-decoration: none;
@@ -959,28 +961,28 @@ label {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
- 
- 
+
+
 /* ========================================= */
 /* PROCESO                                   */
 /* ========================================= */
 .proceso-servicio {
     background: var(--gris-fondo);
 }
- 
+
 .contenedor-pasos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
- 
+
 .paso-servicio {
     background: var(--blanco);
     padding: 40px;
     border-left: 4px solid var(--celeste);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
- 
+
 .numero-paso {
     display: inline-block;
     color: var(--celeste);
@@ -988,48 +990,48 @@ label {
     font-weight: 700;
     margin-bottom: 20px;
 }
- 
+
 .paso-servicio h3 {
     margin-bottom: 15px;
     color: var(--azul-skylux);
 }
- 
+
 .paso-servicio p {
     color: var(--texto-suave);
 }
- 
- 
+
+
 /* ========================================= */
 /* BENEFICIOS                                */
 /* ========================================= */
 .beneficios-servicios {
     background: var(--blanco);
 }
- 
+
 .beneficio-item {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     margin-top: 30px;
 }
- 
+
 .beneficio-item i {
     color: var(--celeste);
     font-size: 22px;
     margin-top: 5px;
 }
- 
+
 .beneficio-item h4 {
     margin-bottom: 8px;
     color: var(--azul-skylux);
 }
- 
+
 .beneficio-item p {
     color: var(--texto-suave);
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* CTA FINAL                                 */
 /* ========================================= */
@@ -1041,31 +1043,31 @@ label {
     text-align: center;
     color: var(--blanco);
 }
- 
+
 .contenido-cta {
     max-width: 700px;
     margin: auto;
 }
- 
+
 .contenido-cta h2 {
     font-size: 42px;
     margin: 20px 0;
 }
- 
+
 .contenido-cta p {
     color: #d7d7d7;
     margin-bottom: 35px;
 }
- 
- 
+
+
 /* ========================================= */
 /* HISTORIA                                  */
 /* ========================================= */
 .historia-nosotros {
     background: var(--blanco);
 }
- 
- 
+
+
 /* ========================================= */
 /* ESTADISTICAS                              */
 /* ========================================= */
@@ -1073,126 +1075,126 @@ label {
     background: var(--azul-skylux);
     color: var(--blanco);
 }
- 
+
 .contenedor-estadisticas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     text-align: center;
 }
- 
+
 .item-estadistica h2 {
     font-size: 55px;
     color: var(--celeste);
     margin-bottom: 10px;
 }
- 
+
 .item-estadistica p {
     color: #d4d4d4;
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* EQUIPO                                    */
 /* ========================================= */
 .equipo {
     background: var(--gris-fondo);
 }
- 
+
 .contenedor-equipo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
- 
+
 .tarjeta-equipo {
     background: var(--blanco);
     overflow: hidden;
     transition: all 0.3s ease;
 }
- 
+
 .tarjeta-equipo:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
- 
+
 .imagen-equipo {
     height: 350px;
     overflow: hidden;
 }
- 
+
 .imagen-equipo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
- 
+
 .contenido-equipo {
     padding: 30px;
     text-align: center;
 }
- 
+
 .contenido-equipo h3 {
     margin-bottom: 10px;
     color: var(--azul-skylux);
 }
- 
+
 .contenido-equipo span {
     color: var(--texto-suave);
 }
- 
- 
+
+
 /* ========================================= */
 /* VALORES                                   */
 /* ========================================= */
 .valores {
     background: var(--blanco);
 }
- 
+
 .contenedor-valores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
- 
+
 .valor-item {
     text-align: center;
     padding: 40px 30px;
     border: 1px solid #eeeeee;
     transition: all 0.3s ease;
 }
- 
+
 .valor-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
- 
+
 .valor-item i {
     font-size: 40px;
     color: var(--celeste);
     margin-bottom: 25px;
 }
- 
+
 .valor-item h3 {
     margin-bottom: 15px;
     color: var(--azul-skylux);
 }
- 
+
 .valor-item p {
     color: var(--texto-suave);
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* RESERVA CITA                              */
 /* ========================================= */
 .reserva-cita {
     background: var(--blanco);
 }
- 
- 
+
+
 /* ========================================= */
 /* RESERVA CITA — Formulario                 */
 /* ========================================= */
@@ -1241,13 +1243,13 @@ label {
 .informacion-reserva {
     background: var(--gris-fondo);
 }
- 
+
 .contenedor-informacion {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
- 
+
 .info-reserva {
     background: var(--blanco);
     text-align: center;
@@ -1255,153 +1257,153 @@ label {
     border: 1px solid #eeeeee;
     transition: all 0.3s ease;
 }
- 
+
 .info-reserva:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
- 
+
 .info-reserva i {
     font-size: 40px;
     color: var(--celeste);
     margin-bottom: 25px;
 }
- 
+
 .info-reserva h3 {
     margin-bottom: 15px;
     color: var(--azul-skylux);
 }
- 
+
 .info-reserva p {
     color: var(--texto-suave);
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* BENEFICIOS RESERVA                        */
 /* ========================================= */
 .beneficios-reserva {
     background: var(--blanco);
 }
- 
- 
+
+
 /* ========================================= */
 /* FAQ                                       */
 /* ========================================= */
 .faq-reservas {
     background: var(--gris-fondo);
 }
- 
+
 .contenedor-faq {
     display: grid;
     gap: 25px;
     max-width: 900px;
     margin: auto;
 }
- 
+
 .faq-item {
     background: var(--blanco);
     padding: 35px;
     border-left: 4px solid var(--celeste);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
- 
+
 .faq-item h3 {
     margin-bottom: 15px;
     color: var(--azul-skylux);
 }
- 
+
 .faq-item p {
     color: var(--texto-suave);
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* NOSOTROS — Experiencia Premium (métricas) */
 /* ========================================= */
- 
+
 /* Sección con fondo gris */
 .experiencia-premium {
     background-color: var(--gris-fondo);
 }
- 
+
 /* Grid de 4 métricas reutilizando formulario-filtro */
 .experiencia-premium .formulario-filtro {
     background: transparent;
     padding: 0;
     box-shadow: none;
 }
- 
+
 /* Tarjeta de métrica individual */
 .tarjeta-metrica {
     text-align: center;
     padding: 30px 20px;
 }
- 
+
 /* Número principal de la métrica */
 .tarjeta-metrica .telefono-destacado {
     color: var(--azul-skylux);
     margin-bottom: 5px;
 }
- 
+
 /* Etiqueta de la métrica */
 .tarjeta-metrica .mini-titulo {
     color: var(--texto-suave);
 }
- 
- 
+
+
 /* ========================================= */
 /* NOSOTROS — Nuestro Equipo                 */
 /* ========================================= */
- 
+
 /* Espacio de imagen del miembro de equipo */
 .tarjeta-equipo-miembro .espacio-imagen {
     height: 320px;
     border-radius: 6px;
     margin-bottom: 15px;
 }
- 
+
 /* Nombre del miembro */
 .tarjeta-equipo-miembro .nombre-miembro {
     font-size: 18px;
 }
- 
+
 /* Cargo del miembro */
 .tarjeta-equipo-miembro .cargo-miembro {
     color: var(--celeste);
     font-weight: 600;
 }
- 
- 
+
+
 /* ========================================= */
 /* NOSOTROS — Nuestros Valores               */
 /* ========================================= */
- 
+
 /* Fondo gris para la sección de valores */
 .nuestros-valores {
     background-color: var(--gris-fondo);
 }
- 
+
 /* Borde inferior azul en cada tarjeta de valor */
 .tarjeta-valor {
     border-bottom: 4px solid var(--azul-skylux);
 }
- 
+
 /* Icono del valor */
 .tarjeta-valor .estrellas {
     color: var(--celeste);
     margin-bottom: 10px;
 }
- 
+
 /* Título del valor */
 .tarjeta-valor h3 {
     font-family: var(--fuente-primaria);
     margin-bottom: 10px;
     font-size: 20px;
 }
- 
+
 /* Descripción del valor */
 .tarjeta-valor p {
     color: var(--texto-suave);
@@ -1409,55 +1411,56 @@ label {
     line-height: 1.5;
     margin-bottom: 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* MODELOS — Nuestros Autos / Híbridos       */
 /* ========================================= */
- 
+
 /* Alineación izquierda para el título de sección en modelos */
 .titulo-seccion-izquierda {
     text-align: left;
     margin-bottom: 40px;
 }
- 
+
 .titulo-seccion-izquierda .subtitulo {
     color: var(--celeste);
     font-weight: 600;
     letter-spacing: 2px;
 }
- 
+
 .titulo-seccion-izquierda h2 {
     font-size: 32px;
     font-family: var(--fuente-primaria);
 }
- 
+
 /* Tarjeta de auto (nuestros autos y híbridos) */
 .tarjeta-auto {
     padding: 0;
     overflow: hidden;
     border-radius: 8px;
+    object-position: center 60%; 
 }
- 
+
 /* Imagen de la tarjeta de auto */
 .tarjeta-auto .imagen-auto {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
- 
+
 /* Cuerpo de la tarjeta de auto */
 .tarjeta-auto .cuerpo-auto {
     padding: 20px;
 }
- 
+
 /* Nombre del modelo */
 .tarjeta-auto .nombre-auto {
     font-size: 20px;
     margin-bottom: 5px;
     font-family: var(--fuente-primaria);
 }
- 
+
 /* Precio del auto */
 .tarjeta-auto .precio-auto {
     font-size: 22px;
@@ -1465,61 +1468,61 @@ label {
     display: block;
     margin-bottom: 15px;
 }
- 
+
 /* Botón ver detalle */
 .tarjeta-auto .btn-ver-detalle {
     display: block;
     text-align: center;
     padding: 10px 0;
 }
- 
- 
+
+
 /* ========================================= */
 /* MODELOS — Híbridos (variante compacta)    */
 /* ========================================= */
- 
+
 /* Fondo gris para la sección de híbridos */
 .seccion-hibridos {
     background-color: var(--gris-fondo);
 }
- 
+
 /* Grid con gap mayor para híbridos */
 .rejilla-testimonios.gap-hibridos {
     gap: 30px;
 }
- 
+
 /* Tarjeta híbrida (fondo blanco explícito) */
 .tarjeta-hibrido {
     padding: 0;
     overflow: hidden;
     background: var(--blanco);
 }
- 
+
 /* Imagen del híbrido (más baja que la de nuestros autos) */
 .tarjeta-hibrido .imagen-hibrido {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
- 
+
 /* Cuerpo de la tarjeta híbrida */
 .tarjeta-hibrido .cuerpo-hibrido {
     padding: 20px;
 }
- 
+
 /* Nombre del híbrido */
 .tarjeta-hibrido h3 {
     margin-bottom: 10px;
     font-size: 19px;
 }
- 
+
 /* Año y kilometraje */
 .tarjeta-hibrido .info-hibrido {
     color: var(--texto-suave);
     font-size: 14px;
     margin-bottom: 15px;
 }
- 
+
 /* Precio del híbrido */
 .tarjeta-hibrido .precio-hibrido {
     font-size: 20px;
@@ -1528,7 +1531,7 @@ label {
     display: block;
     margin-bottom: 15px;
 }
- 
+
 /* Botón del híbrido */
 .tarjeta-hibrido .btn-hibrido {
     display: block;
@@ -1536,18 +1539,38 @@ label {
     padding: 8px 0;
     font-size: 14px;
 }
- 
- 
+
+/* Botón del híbrido */
+.tarjeta-hibrido .btn-hibrido,
+.tarjeta-hibrido .btn-ver-detalle {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border: 1px solid var(--azul-skylux);
+    color: var(--azul-skylux);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    background: transparent;  /* ← esto neutraliza el fondo negro */
+}
+
+.tarjeta-hibrido .btn-ver-detalle:hover {
+    background-color: var(--azul-skylux);
+    color: var(--blanco);
+}
+
 /* ========================================= */
 /* MODELOS — Seminuevos certificados         */
 /* ========================================= */
- 
+
 /* Tarjeta de seminuevo */
 .tarjeta-seminuevo {
     padding: 15px;
     border: 1px solid #eee;
 }
- 
+
 /* Imagen del seminuevo */
 .tarjeta-seminuevo .imagen-seminuevo {
     width: 100%;
@@ -1556,13 +1579,13 @@ label {
     border-radius: 4px;
     margin-bottom: 10px;
 }
- 
+
 /* Nombre del seminuevo */
 .tarjeta-seminuevo h4 {
     font-size: 16px;
     margin-bottom: 5px;
 }
- 
+
 /* Precio del seminuevo */
 .tarjeta-seminuevo .precio-seminuevo {
     color: var(--celeste);
@@ -1571,7 +1594,7 @@ label {
     display: block;
     margin-bottom: 10px;
 }
- 
+
 /* Botón del seminuevo */
 .tarjeta-seminuevo .btn-seminuevo {
     display: block;
@@ -1580,50 +1603,50 @@ label {
     font-size: 12px;
     border-radius: 4px;
 }
- 
- 
+
+
 /* ========================================= */
 /* MODELOS — Sección "Vende tu auto"         */
 /* ========================================= */
- 
+
 /* Fondo azul oscuro y texto blanco */
 .seccion-vende-auto {
     background-color: var(--azul-skylux);
     color: var(--blanco);
 }
- 
+
 /* Layout de dos columnas */
 .seccion-vende-auto .contenedor-flex {
     align-items: center;
     gap: 50px;
 }
- 
+
 /* Bloque izquierdo: texto de invitación */
 .vende-texto {
     flex: 1;
     min-width: 300px;
 }
- 
+
 .vende-texto .subtitulo {
     color: var(--celeste);
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
- 
+
 .vende-texto h2 {
     font-size: 36px;
     color: var(--blanco);
     margin-bottom: 15px;
     font-family: var(--fuente-primaria);
 }
- 
+
 .vende-texto p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     margin-bottom: 0;
 }
- 
+
 /* Bloque derecho: formulario */
 .vende-formulario {
     flex: 1;
@@ -1633,7 +1656,7 @@ label {
     color: initial;
     border-radius: 8px;
 }
- 
+
 /* Grid vertical del formulario */
 .vende-formulario .formulario-interno {
     display: flex;
@@ -1643,20 +1666,20 @@ label {
     padding: 0;
     box-shadow: none;
 }
- 
+
 /* Grupo de campo (label + input) */
 .vende-formulario .grupo-campo {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
- 
+
 /* Label del formulario */
 .vende-formulario label {
     font-weight: 600;
     font-size: 14px;
 }
- 
+
 /* Input del formulario */
 .vende-formulario input {
     padding: 10px;
@@ -1664,7 +1687,7 @@ label {
     border-radius: 4px;
     font-family: var(--fuente-secundaria);
 }
- 
+
 /* Botón de envío */
 .vende-formulario .btn-enviar {
     margin-top: 10px;
@@ -1673,56 +1696,198 @@ label {
     border: none;
     cursor: pointer;
 }
- 
- 
+
+/* ========================================= */
+/* MODAL — Ver detalle de auto               */
+/* ========================================= */
+
+/* Fondo oscuro que cubre toda la pantalla */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Visible cuando se activa */
+.modal-overlay.modal-activo {
+    display: flex;
+}
+
+/* Contenedor del modal */
+.modal-contenido {
+    background: var(--blanco);
+    border-radius: 8px;
+    max-width: 850px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Botón cerrar X */
+.modal-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--texto-suave);
+    z-index: 10;
+    line-height: 1;
+}
+
+.modal-cerrar:hover {
+    color: var(--texto-oscuro);
+}
+
+/* Layout interno: imagen izquierda, info derecha */
+.modal-cuerpo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen del auto */
+.modal-imagen {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+/* Bloque de información */
+.modal-info {
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-nombre {
+    font-size: 26px;
+    font-family: var(--fuente-primaria);
+    color: var(--azul-skylux);
+    margin-bottom: 0;
+}
+
+.modal-precio {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--celeste);
+    display: block;
+}
+
+/* Separador */
+.modal-separador {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 5px 0;
+}
+
+/* Fila de especificación: ícono + texto */
+.modal-spec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--texto-oscuro);
+}
+
+.modal-spec i {
+    color: var(--celeste);
+    width: 18px;
+    text-align: center;
+}
+
+.modal-spec span {
+    color: var(--texto-suave);
+    margin-right: 4px;
+}
+
+/* Descripción */
+.modal-descripcion {
+    font-size: 14px;
+    color: var(--texto-suave);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Botón reservar */
+.modal-btn-reservar {
+    display: block;
+    text-align: center;
+    background: var(--celeste);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 12px 0;
+    font-family: var(--fuente-primaria);
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: auto;
+    transition: background 0.3s ease;
+}
+
+.modal-btn-reservar:hover {
+    background: #0077cc;
+}
+
+
 /* -------------------------------- */
 /* Efectos visuales                 */
 /* -------------------------------- */
 @keyframes floating {
- 
+
     0%,
     100% {
         transform: translateY(0px);
     }
- 
+
     50% {
         transform: translateY(-5px);
     }
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Pantalla Laptop                  */
 /* -------------------------------- */
 @media (max-width: 1200px) {
- 
+
     .container {
         max-width: 80%;
     }
- 
+
     .seccion-principal h1 {
         font-size: 50px;
     }
- 
+
     .contenedor-flex {
         gap: 40px;
     }
- 
+
     .bloque-contenido-nosotros h2 {
         font-size: 38px;
     }
- 
+
     .telefono-destacado {
         font-size: 26px;
     }
- 
+
     .fila-detalles {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Tablet                           */
 /* -------------------------------- */
@@ -1730,56 +1895,56 @@ label {
     .container {
         max-width: 90%;
     }
- 
+
     .nav-menu-link {
         font-size: 0.8rem;
     }
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Celular                          */
 /* -------------------------------- */
 @media (max-width: 768px) {
- 
+
     .container {
         max-width: 95%;
     }
- 
+
     .enlaces-nav {
         display: none;
     }
- 
+
     .nav-menu-toggle {
         display: block;
     }
- 
+
     .fila-detalles {
         grid-template-columns: 1fr;
     }
- 
+
     .fila-navegacion {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
- 
+
     .contenedor-flex {
         flex-direction: column;
     }
- 
+
     .bloque-imagen-nosotros {
         max-width: 100%;
     }
- 
+
     .padding-xl {
         padding-top: 50px;
         padding-bottom: 50px;
     }
- 
+
     .navegacion {
         position: relative;
     }
- 
+
     .nav-open {
         display: flex;
         flex-direction: column;
@@ -1796,58 +1961,67 @@ label {
         opacity: 0;
         transition: all 0.4s ease-in-out;
     }
- 
+
     .nav-open.nav-visible {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
     }
- 
+
     .enlaces-nav:first-of-type.nav-open {
         top: 65px;
         border-radius: 12px;
     }
- 
+
     .enlaces-nav:last-of-type.nav-open {
         top: 230px;
         padding-top: 0;
         box-shadow: none;
         border-radius: 0 0 12px 12px;
     }
- 
+
     .nav-open .nav-menu-link {
         text-align: center;
         padding: 12px;
         border-radius: 8px;
         width: 100%;
     }
- 
+
     .nav-open .nav-menu-link-active {
         background-color: var(--celeste);
         color: white;
     }
- 
+
     .nav-open .nav-menu-link:hover {
         background-color: var(--gris-fondo);
         color: var(--azul-skylux);
     }
- 
+
     .formulario-filtro {
         grid-template-columns: 1fr;
     }
- 
+
     /* Vende tu auto — columna en móvil */
     .seccion-vende-auto .contenedor-flex {
         flex-direction: column;
     }
- 
+
     .vende-texto,
     .vende-formulario {
         min-width: unset;
         width: 100%;
     }
+
+    .modal-cuerpo {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-imagen {
+        border-radius: 8px 8px 0 0;
+        min-height: 220px;
+    }
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Testimonios — ajuste intermedio  */
 /* -------------------------------- */
@@ -1856,69 +2030,69 @@ label {
         padding: 50px 20px;
     }
 }
- 
- 
+
+
 /* -------------------------------- */
 /* Celular pequeño                  */
 /* -------------------------------- */
 @media (max-width: 480px) {
- 
+
     .topbar-container {
         flex-direction: column;
         align-items: center;
         gap: 8px;
         text-align: center;
     }
- 
+
     .topbar-contacts {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4px;
     }
- 
+
     .topbar-social {
         justify-content: center;
         gap: 12px;
     }
- 
+
     .logotipo h1 {
         font-size: 18px;
     }
- 
+
     .cabecera {
         padding-top: 8px;
         padding-bottom: 8px;
     }
- 
+
     .seccion-principal {
         padding: 0 20px;
     }
- 
+
     .seccion-principal h1 {
         font-size: 36px;
     }
- 
+
     .etiqueta {
         font-size: 11px;
         letter-spacing: 3px;
     }
- 
+
     .botones-grupo {
         display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: center;
     }
- 
+
     .fila-navegacion {
         grid-template-columns: 1fr;
     }
- 
+
     .titulo-seccion h2 {
         font-size: 24px;
     }
- 
+
     .bloque-contenido-nosotros h2 {
         font-size: 30px;
     }
