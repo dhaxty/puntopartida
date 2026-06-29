@@ -108,7 +108,7 @@
                     </a>
 
 
-                    <a href="assets/pages/servicios.html" class="btn-secundario">
+                    <a href="assets/pages/contacto.html" class="btn-secundario">
                         Vender mi coche
                     </a>
 
@@ -180,21 +180,18 @@
         </section> <!-- Fin del buscador -->
 
         <!-- Sección Inventario destacado -->
+        <!-- Sección Inventario destacado -->
         <section class="inventario-destacado padding-xl">
             <div class="container">
-                <!-- Título de sección -->
                 <div class="titulo-seccion">
                     <h2>Últimas Adquisiciones</h2>
                     <p>Nuestras unidades más recientes listas para entrega inmediata.</p>
                 </div>
-
-                <!-- Grid de tarjetas de coches -->
                 <div class="contenedor-coches">
-
                     <!-- Tarjeta 1 -->
                     <article class="tarjeta-coche">
                         <div class="espacio-imagen">
-                            <img src="assets/imag/Porsche911Carrera.jpg" alt="Porsche 911 Carrera">
+                            <img src="assets/imag/porsche911carrera.jpg" alt="Porsche 911 Carrera">
                         </div>
                         <div class="detalles-coche">
                             <h3>Porsche 911 Carrera</h3>
@@ -205,10 +202,15 @@
                                 <span>Año: 2024</span>
                                 <span>Km: 5.200</span>
                             </div>
-                            <button class="btn-detalles">Ver Ficha Completa</button>
+                            <button class="btn-detalles btn-ver-detalle" data-foto="assets/imag/porsche911carrera.jpg"
+                                data-nombre="Porsche 911 Carrera" data-precio="$129,900" data-anio="2024"
+                                data-km="5,200 km" data-motor="3.0L Boxer 6 cilindros Turbo"
+                                data-transmision="PDK 8 velocidades" data-color="Plata GT Metalizado"
+                                data-descripcion="El Porsche 911 Carrera es el referente absoluto del deporte en carretera. Con 450 CV y aceleración de 0 a 100 km/h en 4.2 segundos, combina rendimiento extremo con un uso diario sorprendentemente cómodo.">
+                                Ver Ficha Completa
+                            </button>
                         </div>
                     </article>
-
                     <!-- Tarjeta 2 -->
                     <article class="tarjeta-coche">
                         <div class="espacio-imagen">
@@ -223,14 +225,19 @@
                                 <span>Año: 2025</span>
                                 <span>Km: 0 (Nuevo)</span>
                             </div>
-                            <button class="btn-detalles">Ver Ficha Completa</button>
+                            <button class="btn-detalles btn-ver-detalle" data-foto="assets/imag/audi-rs-q8-by.jpg"
+                                data-nombre="Audi RS Q8" data-precio="$168,500" data-anio="2025" data-km="0 km (Nuevo)"
+                                data-motor="4.0L V8 TFSI mild-hybrid" data-transmision="Tiptronic 8 velocidades"
+                                data-color="Negro Mythos Perlado"
+                                data-descripcion="El Audi RS Q8 fusiona la practicidad de un SUV con el temperamento de un superdeportivo. Sus 600 CV lo llevan de 0 a 100 km/h en solo 3.8 segundos, con tracción quattro y suspensión neumática adaptativa.">
+                                Ver Ficha Completa
+                            </button>
                         </div>
                     </article>
-
                     <!-- Tarjeta 3 -->
                     <article class="tarjeta-coche">
                         <div class="espacio-imagen">
-                            <img src="assets/imag/Mercedes.jpg" alt="Mercedes-AMG GT">
+                            <img src="assets/imag/mercedes.jpg" alt="Mercedes-AMG GT">
                         </div>
                         <div class="detalles-coche">
                             <h3>Mercedes-AMG GT</h3>
@@ -241,13 +248,62 @@
                                 <span>Año: 2023</span>
                                 <span>Km: 12.000</span>
                             </div>
-                            <button class="btn-detalles">Ver Ficha Completa</button>
+                            <button class="btn-detalles btn-ver-detalle" data-foto="assets/imag/mercedes.jpg"
+                                data-nombre="Mercedes-AMG GT" data-precio="$145,000" data-anio="2023"
+                                data-km="12,000 km" data-motor="4.0L V8 Biturbo AMG"
+                                data-transmision="AMG Speedshift DCT 7 velocidades"
+                                data-color="Gris Selenita Metalizado"
+                                data-descripcion="El Mercedes-AMG GT es pura expresión de potencia y elegancia alemana. Con su motor V8 biturbo de 530 CV y un sonido inconfundible, ofrece una experiencia de conducción que pocos autos del mundo pueden igualar.">
+                                Ver Ficha Completa
+                            </button>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
 
-                </div> <!-- Fin del grid de coches -->
-            </div> <!-- Fin del container -->
-        </section> <!-- Fin del inventario -->
+        <!-- MODAL VER DETALLE -->
+        <div class="modal-overlay" id="modal-auto">
+            <div class="modal-contenido">
+                <button class="modal-cerrar" id="modal-cerrar">&times;</button>
+                <div class="modal-cuerpo">
+                    <img src="" alt="" class="modal-imagen" id="modal-foto">
+                    <div class="modal-info">
+                        <h2 class="modal-nombre" id="modal-nombre"></h2>
+                        <span class="modal-precio" id="modal-precio"></span>
+                        <hr class="modal-separador">
+                        <div class="modal-spec">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Año:</span>
+                            <strong id="modal-anio"></strong>
+                        </div>
+                        <div class="modal-spec">
+                            <i class="fa-solid fa-gauge"></i>
+                            <span>Kilometraje:</span>
+                            <strong id="modal-km"></strong>
+                        </div>
+                        <div class="modal-spec">
+                            <i class="fa-solid fa-solid fa-horse"></i>
+                            <span>Motor:</span>
+                            <strong id="modal-motor"></strong>
+                        </div>
+                        <div class="modal-spec">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Transmisión:</span>
+                            <strong id="modal-transmision"></strong>
+                        </div>
+                        <div class="modal-spec">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>Color:</span>
+                            <strong id="modal-color"></strong>
+                        </div>
+                        <hr class="modal-separador">
+                        <p class="modal-descripcion" id="modal-descripcion"></p>
+                        <a href="assets/pages/reservas.html" class="modal-btn-reservar">Reservar este vehículo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Sección Tabla Comparativa de Rendimiento -->
         <section class="tabla-comparativa padding-xl">
@@ -519,7 +575,8 @@
                     <h3>Recibe Últimas Novedades y Ofertas</h3>
                     <p>Suscríbete para no perderte nuestras próximas subastas y lanzamientos.</p>
                     <form class="form-newsletter">
-                        <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
+                        <input type="email" required placeholder="Tu correo electrónico"
+                            aria-label="Correo electrónico para newsletter">
                         <button type="submit">Unirse</button>
                     </form>
                 </div>
@@ -539,4 +596,5 @@
 
 <!-- Enlazar el HTML con la libreria de Javascript-->
 <script src="assets/js/scripts.js"></script>
+
 </html>

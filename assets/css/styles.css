@@ -1358,11 +1358,18 @@ label {
 /* NOSOTROS — Nuestro Equipo                 */
 /* ========================================= */
 
-/* Espacio de imagen del miembro de equipo */
 .tarjeta-equipo-miembro .espacio-imagen {
-    height: 320px;
+    height: 400px; /* ← más espacio */
     border-radius: 6px;
     margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.tarjeta-equipo-miembro .espacio-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
 }
 
 /* Nombre del miembro */
@@ -1721,22 +1728,29 @@ label {
     position: relative;
 }
 
-/* Botón cerrar X */
+/* Boton Cerrar X */
 .modal-cerrar {
     position: absolute;
     top: 15px;
     right: 20px;
     font-size: 28px;
-    background: none;
+    background: rgba(0, 0, 0, 0.5); /* ← fondo oscuro semitransparente */
     border: none;
     cursor: pointer;
-    color: var(--texto-suave);
+    color: var(--blanco); /* ← X en blanco */
     z-index: 10;
     line-height: 1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* ← forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-cerrar:hover {
-    color: var(--texto-oscuro);
+    background: rgba(0, 0, 0, 0.8); /* ← más oscuro al pasar el mouse */
+    color: var(--blanco);
 }
 
 /* Layout interno: imagen izquierda, info derecha */
@@ -1829,6 +1843,23 @@ label {
 
 .modal-btn-reservar:hover {
     background: #0077cc;
+}
+
+/* ================================= */
+/* Botones del banner principal      */
+/* ================================= */
+.botones-grupo {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primario,
+.btn-secundario {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 
@@ -1943,11 +1974,12 @@ label {
     .modelotop-video {
         font-size: 1.4rem;
         letter-spacing: 2px;
-        margin-top: 0; /* ← elimina el margen negativo en móvil */
+        margin-top: 0;
+        /* ← elimina el margen negativo en móvil */
     }
 
     .container {
-        max-width: 95%;
+        max-width: 90%;
     }
 
     .enlaces-nav {
@@ -2057,6 +2089,10 @@ label {
     .form-reserva {
         grid-template-columns: 1fr;
     }
+
+    .page-title-content {
+        padding: 0 20px;
+    }
 }
 
 
@@ -2075,9 +2111,17 @@ label {
 /* -------------------------------- */
 @media (max-width: 480px) {
 
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1.2rem; }
-    h3 { font-size: 1rem; }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
 
     .padding-xl {
         padding-top: 30px;
@@ -2136,6 +2180,14 @@ label {
         flex-direction: column;
         gap: 15px;
         align-items: center;
+        width: 100%
+    }
+
+    .btn-primario,
+    .btn-secundario {
+        width: 100%;
+        max-width: 280px;
+        margin-right: 0;
     }
 
     .fila-navegacion {
@@ -2148,5 +2200,9 @@ label {
 
     .bloque-contenido-nosotros h2 {
         font-size: 30px;
+    }
+
+    .container {
+        max-width: 88%;
     }
 }
