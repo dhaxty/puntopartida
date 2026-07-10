@@ -48,6 +48,9 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
+                    <a target="_blank" href="https://linkedin.com/company/puntopartida">
+                        <i class="fa-brands fa-linkedin"></i>
+
                     <a target="_blank" href="https://www.youtube.com/channel/puntopartida">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -121,21 +124,21 @@
                     <!-- Nombre -->
                     <div class="campo">
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3"
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60"
                             placeholder="Ej: Juan Pérez">
                     </div>
 
                     <!-- Email -->
                     <div class="campo">
                         <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
+                        <input type="email" id="email" name="email" required maxlength="100" placeholder="ejemplo@gmail.com">
                     </div>
 
                     <!-- Teléfono -->
                     <div class="campo">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}"
-                            placeholder="9 dígitos">
+                        <input type="tel" id="telefono" name="telefono" required maxlength="9" pattern="[0-9]{9}"
+                            inputmode="numeric" placeholder="9 dígitos">
                     </div>
 
                     <!-- Asunto -->
@@ -153,7 +156,7 @@
                     <!-- Mensaje -->
                     <div class="campo">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="6" required minlength="10"
+                        <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="300"
                             placeholder="Escribe tu mensaje aquí"></textarea>
                     </div>
 
@@ -312,7 +315,7 @@
                     <h3>Recibe Últimas Novedades y Ofertas</h3>
                     <p>Suscríbete para no perderte nuestras próximas subastas y lanzamientos.</p>
                     <form class="form-newsletter">
-                        <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
+                        <input type="email" required maxlength="100" placeholder="Tu correo electrónico" aria-label="Correo electrónico para newsletter">
                         <button type="submit">Unirse</button>
                     </form>
                 </div>

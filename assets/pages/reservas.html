@@ -48,6 +48,9 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
+                    <a target="_blank" href="https://linkedin.com/company/puntopartida">
+                        <i class="fa-brands fa-linkedin"></i>                    
+
                     <a target="_blank" href="https://www.youtube.com/channel/puntopartida">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -130,27 +133,28 @@
                 <form class="form-reserva">
                     <div class="campo">
                         <label>Nombre</label>
-                        <input type="text" placeholder="Ingresa tu nombre">
+                        <input type="text" required minlength="3" maxlength="60" placeholder="Ingresa tu nombre">
                     </div>
                     <div class="campo">
                         <label>Apellido</label>
-                        <input type="text" placeholder="Ingresa tu apellido">
+                        <input type="text" required minlength="3" maxlength="60" placeholder="Ingresa tu apellido">
                     </div>
                     <div class="campo">
                         <label>Correo electrónico</label>
-                        <input type="email" placeholder="correo@ejemplo.com">
+                        <input type="email" required maxlength="100" placeholder="correo@ejemplo.com">
                     </div>
                     <div class="campo">
                         <label>Teléfono</label>
-                        <input type="tel" placeholder="+51 999 999 999">
+                        <input type="tel" required maxlength="9" pattern="[0-9]{9}" inputmode="numeric"
+                            placeholder="9 dígitos">
                     </div>
                     <div class="campo">
                         <label>Fecha</label>
-                        <input type="date">
+                        <input type="date" required>
                     </div>
                     <div class="campo">
                         <label>Hora</label>
-                        <input type="time">
+                        <input type="time" required>
                     </div>
                     <div class="campo">
                         <label>Vehículo de interés</label>
@@ -178,7 +182,8 @@
                     </div>
                     <div class="campo campo-completo">
                         <label>Mensaje adicional</label>
-                        <textarea placeholder="Escribe información adicional..."></textarea>
+                        <textarea minlength="10" maxlength="300"
+                            placeholder="Escribe información adicional..."></textarea>
                     </div>
                     <div class="campo-completo">
                         <button type="submit" class="btn-primario">Reservar cita</button>
@@ -405,7 +410,7 @@
                     <h3>Recibe Últimas Novedades y Ofertas</h3>
                     <p>Suscríbete para no perderte nuestras próximas subastas y lanzamientos.</p>
                     <form class="form-newsletter">
-                        <input type="email" required placeholder="Tu correo electrónico"
+                        <input type="email" required maxlength="100" placeholder="Tu correo electrónico"
                             aria-label="Correo electrónico para newsletter">
                         <button type="submit">Unirse</button>
                     </form>
